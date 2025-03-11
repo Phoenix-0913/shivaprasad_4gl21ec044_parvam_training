@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Student Regestration Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="container row">
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="first_name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first_name" placeholder="enter your First name">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="middle_name" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middle_name" placeholder="enter your Middle name">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last_name" placeholder="enter your Last name">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="USN" class="form-label">USN </label>
+                <input type="text" class="form-control" id="USN" placeholder="Enter your USN">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your Password">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlTextarea1" class="form-label">phone number</label>
+                <input type="tel" class="form-control" id="exampleFormControlTextarea1" >
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlTextarea1" class="form-label">DOB</label>
+                <input class="form-control" type="text" id="exampleFormControlTextarea1" >
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                <textarea class="form-check-label" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <div class="mb-3 col-md-4 col-lg-12 col-sm-8">
+                <label for="exampleFormControlTextarea1" class="form-label"> Tem Address</label>
+                <textarea class="form-check-label" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Reset</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="../bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>   
+</body>
+</html>

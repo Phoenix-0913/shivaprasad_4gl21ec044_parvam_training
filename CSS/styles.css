@@ -1,0 +1,21 @@
+.parent{
+    border: 2px solid brown;
+    display: flex;
+    height: 1000px;
+    /* justify-content handel horizontal direction */
+    justify-content: space-between;
+    /* align items handel vertical direction. */
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 50px;
+}
+.child{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border: 2px solid black;
+    color: beige;
+    font-size: 40px;
+}

@@ -1,0 +1,43 @@
+nav{
+    background-color: aliceblue;
+    border: 1px solid green;
+}
+
+.menu-bar{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: blue;
+    align-items: center;
+
+}
+
+img{
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    /* flex-shrink: 2; */
+    font-size: 20px;
+}
+.menu-items{
+    border:1px solid black;
+    padding: 20px;
+    flex-grow: 1;
+}
+.logo{
+    flex-grow: 5;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+    font-size: 30px;
+}
+img{
+    width: 300px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}

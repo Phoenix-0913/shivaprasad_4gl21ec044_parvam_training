@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <!-- Internal css -->
+        <style>
+            /* Syntax:
+            selector{
+                property1 : value;
+                property2 : value;
+
+            } */
+            h1{ /* this is element selector */
+                color: orange;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                margin-left: 10px;
+                margin-right: 60px;
+                padding: 50px;
+                padding-right: 10px;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                border: 1px solid blue;
+                /* syntax for shorthand property */
+                /* margin: top right bottom left - clockwise direction */
+                margin: 50px 20px 30px 40px;
+                /* opposite directions: top-bottom & left-right */
+                margin: 30px 60px;
+                /* top right-left bottom */
+                margin: 30px 60px 90px;
+                padding: 45px 40px 30px 25px;
+            }
+            p{ /*this is a paragraph */
+                color: brown;
+            }
+            tr{
+                color: green;
+            } 
+            td{
+                color:blueviolet;
+                background-color: rgb(0, 0, 0);
+            } th{
+                /* color:black; */
+                /* rgb stands for red,green and blue value can be b/w 0 to 255 */
+                /* color: rgb(78,78,78); */
+                /* rgba method where a stands for alpha, value varies from 0 to 1in decimal no */
+                /* color: rgba(78,78,78,01) */
+                /* hex code - Hexadecimal code */
+                color: #FF0000;
+                background-color: rgb(72, 255, 0);
+            }
+            table{
+                border-width: 10px;
+                border-color: blue;
+                border-style: groove;
+                /* shorthand property */
+                /* syntax: border: width style color */
+                border:10px solid red;
+                /* to make the borders curve */
+                border-radius: 10px;
+                /* we can apply border for 4 direction */
+                /* they are top, bottom, right, left */
+                border-left: 5px dotted gray;
+                border-right: 5px dotted green;
+                border-top: 5px dotted yellow;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 5px ;
+                border-top-right-radius: 50px ;
+                border-top-left-radius: 50px ;
+                border-collapse: collapse;
+            }
+            td{
+                border: 1px solid black;
+                border-radius: 4px;
+                border-bottom: 4px dashed brown;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- there are 3 types of css in web development -->
+        <!-- internal css,external css and inline css -->
+        <h1>This is a heading.</h1>
+        <h1>this is a second heading.</h1>
+        <p>this is a paragraph</p>
+        <!-- we have different kind of selectorin css -->
+        <!-- they are: element selector, class selector, id selector -->
+        <!-- element selector includes all HTML tags -->
+        <table>
+            <!-- tr - table row -->
+            <!-- th - table heading -->
+            <!-- td - table data -->
+            <tr>  
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+                <th>Table Heading</th>
+            </tr>
+            <tr>  
+                <td>Table Data 11</td>
+                <td>Table Data 12</td>
+                <td>Table Data 13</td>
+                <td>Table Data 14</td>
+            </tr>
+            <tr>  
+                <td>Table Data 21</td>
+                <td>Table Data 22</td>
+                <td>Table Data 23</td>
+                <td>Table Data 24</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Sl. No.</th>
+                <th colspan="2">Country & Player Name</th>
+                <!-- <th>Player Name</th> -->
+                <th>IPL Team</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="4">India</td>
+                <td colspan="2">Virat Kohli, RCB</td>
+                <!-- <td>RCB</td> -->
+            </tr>
+            <tr>
+                <td>2</td>
+                <!-- <td>India</td> -->
+                <td colspan="2">Rajat Patidar, RCB</td>
+                <!-- <td>RCB</td> -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <!-- <td>India</td> -->
+                <td>Rohit Sharma</td>
+                <td rowspan="2">MI</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <!-- <td>India</td> -->
+                <td>Hardik Pandya</td>
+                <!-- <td>MI</td> -->
+            </tr>
+        </table>
+    </body>
+</html>
