@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form method="post" acttion="">
+        <input type="hidden" name="secret_id" id="secret_id" value="bond-007">
+        <label for="usn">USN:</label>
+        <input type="text" name="usn" id="usn" value="4gl21ec001" readonly><br><br>
+        <label for="first_name">First Name:</label>
+         <input type="text" name="first_name" id="first_name" maxlength="8" placeholder="enter ur name" required><br><br>
+        <label for="middle_name">Middle Name:</label>
+         <input type="text" name="middle_name" id="middle_name" autofocus><br><br>
+        <label for="last_name">Last Name:</label>
+         <input type="text" name="last_name" id="last_name"><br><br>
+        <label for="email_id">Email ID:</label>
+         <input type="email" name="email_id" id="email_id" placeholder="enter ur email id"><br><br>
+        <label for="password">Password:</label>
+         <input type="password" name="password" id="password"><br><br>
+        <label for="phone_number">Phone Number:</label>
+         <input type="tel" name="phone_number" id="phone_number" value="+91-9035299800" disabled><br><br>
+        <label for="age">Age:</label>
+         <input type="number" name="age" id="age" min="10" max="30" step="2"><br><br>
+        <label for="dob">DOB:</label>
+         <input type="date" name="dob" id="dob" max="2000-01-01"><br><br>
+        <label for="birthday_week">Birthday Week:</label>
+         <input type="week" name="birthday_week" id="birthday_week"><br><br>
+        <label for="birthday_month">Birthday Month:</label>
+         <input type="month" name="birthday_month" id="birthday_month"><br><br>
+        <label for="birth_time">Birthday Time:</label>
+         <input type="time" name="birth_time" id="birth_time"><br><br>
+        <label for="dob_time">DOB with Birthday Time:</label>
+         <input type="datetime-local" name="dob_time" id="dob_time"><br><br>
+        <label for="gender">Gender:</label>
+         <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+         <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+         <input type="radio" name="gender" id="others" value="others">
+        <label for="others">Others</label><br><br>
+        <label for="subjects">Favorite Subjects:</label>
+        <input type="checkbox" name="subject1" id="maths" value="maths">
+        <label for="maths">Mathematics</label>
+         <input type="checkbox" name="subject2" id="social_science" value="social science">
+        <label for="social_science">Social Science</label>
+         <input type="checkbox" name="subject3" id="science" value="science">
+        <label for="science">Science</label>
+         <input type="checkbox" name="subject4" id="kannada" value="kannada">
+        <label for="kannada">Kannada</label><br><br>
+         <input type="submit"><br><br>
+         <input type="file" name="photo" id="photo" multiple accept="application/doc"> 
+         <input type="reset">
+         <label for="state">select state:</label>
+         <select name="state" id="state" multiple>
+            <option value="KA">Karnataka</option>
+            <option value="TN">Tamil nadu</option>
+            <option value="KL">kerla</option>
+            <option value="AP">andra paradesh</option>
+            <option value="bihar">bihar</option>
+
+        </select>
+        <label for="rating">give ur rating</label>
+        <input type="range" name="rating" id="rating" min="0" max="5"><br><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" row="5" cols="20"></textarea><br><br>
+        <label for="colour">select your colour:</label>
+        <input type="colour" name="colour" id="colour">
+
+        <input type="reset" value="clear">
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
